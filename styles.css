@@ -55,14 +55,14 @@ h1 {
     width: 97%; 
     height: 1px; 
     background-color: #717171; 
-    margin-top: 86px;
+    margin-top: 82px;
 }
 
 .navbar {
     position: relative;
     display: flex;
     justify-content: center;
-    margin-top: 45px;
+    margin-top: 40px;
 }
 
 .list1 {
@@ -172,6 +172,12 @@ ul li:hover {
     object-fit: cover; 
     object-position: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.model img:hover {
+    filter: brightness(50%) blur(1px);
+    transform: scale(1.01);
 }
 
 .model-btn:hover {
@@ -214,24 +220,21 @@ ul li:hover {
 }
 
 .model .variants {
-    font-size: 18px;
+    font-size: 16px;
     color: #FF2121;
     font-family: 'Supreme', sans-serif;
     font-weight: 500;
-    margin-top: 15px;
+    margin-top: 12px;
     margin-bottom: 0px;  
 }
 
 .model .price {
     font-family: 'Supreme', sans-serif;
     font-weight: 200;
-    font-size: 24px;
-    margin-top: 10px;  
+    font-size: 20px;
+    margin-top: 12px;  
 }
 
-.model:hover {
-    transform: scale(1.02);
-}
 
 .contact {
     background-color: #1C1C1C;
@@ -258,7 +261,7 @@ ul li:hover {
 
 .text2 {
     margin-top: 20px;
-    font-size: 20px;
+    font-size: 18px;
     color: rgb(223, 223, 223);
     cursor: pointer;
     transition: color 0.3s ease;
@@ -347,14 +350,15 @@ ul li:hover {
     }
 
     img {
-        width: 200px; 
-        margin-top: 10%; 
+        width: 230px; 
+        margin-top: 11%; 
     }
 
     .buy-button {
         font-size: 18px;
         padding: 18px 22px; 
         margin-top: 25%;
+        font-weight: 500;
     }
     
     .divider {
@@ -403,6 +407,7 @@ ul li:hover {
     }
 
     .model .variants {
+        display: none;
         font-size: 18px;
         color: #FF2121;
         font-family: 'Supreme', sans-serif;
@@ -412,9 +417,10 @@ ul li:hover {
     }
     
     .model .price {
+        position: relative;
         font-family: 'Supreme', sans-serif;
         font-weight: 200;
-        font-size: 24px;
+        font-size: 20px;
         margin-top: 10px;  
     }
 
@@ -483,6 +489,26 @@ ul li:hover {
 
 /* Media query pro vetsi monitory (šířka 1600px a více) */
 @media only screen and (min-width: 1600px) {
+
+    .model h3 {
+        font-size: 30px;
+    }
+    
+    .model p {
+        padding: 0;  
+        margin: 0;   
+    }
+    
+    .model .variants {
+        font-size: 18px;
+    }
+    
+    .model .price {
+        font-size: 24px; 
+    }
+    .text2 {
+        font-size: 20px;
+    }
 
 }
 
